@@ -312,6 +312,7 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
 .align {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .align img {
