@@ -1,0 +1,248 @@
+@media (min-width: 360px) and (max-width:415px) {
+    #top {
+        visibility: hidden;
+    }
+    .layer-flex {
+        flex-flow: row-reverse wrap-reverse;
+    }
+    #static-top {
+        height: 580px;
+    }
+    .layer-text, .layer-img {
+        display: flex;
+        margin: 0% 6%;
+        width: 100%;
+        justify-content: initial;
+    }
+    .layer-text {
+        justify-content: center;
+    }
+    .layer-img {
+        margin-top: 20%;
+    }
+    header {
+        margin: 0 auto;
+    }
+    .text {
+        text-align: center;
+        color: #282828;
+        margin: 0;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+    .row>.entire-small {
+        width: 100%;
+    }
+    .container-justified {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .container.medium {
+        display: block;
+        width: 100%;
+    }
+    .row>* {
+        padding: 15px 0 0 15px !important;
+    }
+    .row>* {
+        box-sizing: border-box;
+    }
+    ul.actions li {
+        display: block;
+        margin: 15px 0 0 0;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+    .actions {
+        display: block;
+    }
+    ul.actions {
+        margin: 0;
+        margin-bottom: 0px;
+    }
+    input[type="button"], input[type="reset"], button, .button {
+        text-align: center;
+        font-size: 1.2em;
+        width: 100%;
+        padding: 0.5em;
+    }
+    .row {
+        margin-top: -15px;
+        margin-left: -15px;
+    }
+    header {
+        margin: 0 0 2em 0;
+        width: 90%;
+    }
+    header>p {
+        font-size: 1.25em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.25em;
+        margin: 0 0 0.4em 0;
+    }
+    .c-text {
+        width: 100%;
+    }
+    .c-img {
+        width: 100%;
+    }
+    .c-img img {
+        width: 100%;
+    }
+    .c-text, .c-img {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .orientation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #me .container {
+        justify-content: center;
+    }
+}
+
+@media(min-width:414px) and (max-width:415px) {
+    .layer-img {
+        justify-content: center;
+    }
+    #col-jobs {
+        padding: 10px;
+    }
+}
+
+@media (max-width:530px) {
+    /*Navbar responsive*/
+    .container {
+        display: flex;
+    }
+    #nav>ul.container>li {
+        display: none;
+    }
+    #menu {
+        cursor: pointer;
+        display: inline-flex !important;
+    }
+    #nav>ul.container>li>div {
+        margin-left: 30px;
+    }
+    .responsive-nav {
+        display: block;
+        transition-duration: 0.1s;
+        height: 20.5em!important;
+    }
+    .responsive-layer-img {
+        transition-duration: 0.5s;
+        margin-top: 80%;
+    }
+    .display_li {
+        display: flex!important;
+        justify-content: flex-start;
+        padding-bottom: 5%;
+    }
+    .responsive-menu {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:667px) and (max-width:740px) {
+    #top {
+        padding-bottom: 400px;
+    }
+    .layer-flex {
+        flex-direction: row-reverse;
+    }
+    .layer-img .image img {
+        width: 300px;
+    }
+    .layer-text, .layer-img {
+        margin: 10% 0;
+    }
+    #static-top {
+        height: 380px;
+    }
+    .container-justified {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .c-text {
+        width: 100%;
+    }
+    .c-img {
+        width: 100%;
+    }
+    .c-img img {
+        width: 50%;
+    }
+    .c-text, .c-img {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .orientation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width:768px) and (max-width:812px) {
+    #top {
+        padding-bottom: 400px;
+    }
+    .layer-flex {
+        flex-direction: row-reverse;
+    }
+    .layer-img .image img {
+        width: 300px;
+    }
+    .layer-text, .layer-img {
+        margin: 10% 0;
+    }
+    #static-top {
+        height: 380px;
+    }
+    #col-jobs {
+        padding: 1%;
+        width: 50%;
+    }
+    .box.style1 {
+        width: 100%;
+    }
+    .container-justified {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .c-text {
+        width: 100%;
+    }
+    .c-img {
+        width: 100%;
+    }
+    .c-img img {
+        width: 50%;
+    }
+    .c-text, .c-img {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .orientation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1024px) {
+    #top {
+        padding-bottom: 445px;
+    }
+    #static-top {
+        height: 420px;
+    }
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.85em;
+    color: #888;
+    font-weight: 300;
+    font-size: 13pt;
+    -webkit-text-size-adjust: none;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+#nav {
+    background-color: #282828;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    cursor: default;
+    height: 3.5em;
+    line-height: 3.5em;
+}
+
+nav {
+    display: block;
+}
+
+#nav a {
+    -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    -ms-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 600;
+    border-radius: 8px;
+    color: #fff;
+    height: 2.5em;
+    line-height: 2.5em;
+    padding: 0 1.25em;
+}
+
+#nav a:hover {
+    color: #fff !important;
+    background: #383838;
+}
+
+a {
+    margin: 0;
+}
+
+#nav ul {
+    margin-bottom: 0;
+    list-style: none;
+    margin-left: 0;
+}
+
+li, span, form {
+    margin: 0;
+    padding: 0;
+    padding-left: 0px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#nav li {
+    display: inline-block;
+    padding-left: 0;
+    vertical-align: baseline;
+}
+
+.container {
+    width: 100%;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
