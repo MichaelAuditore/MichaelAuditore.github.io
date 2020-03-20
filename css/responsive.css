@@ -5,6 +5,9 @@
     .layer-flex {
         flex-flow: row-reverse wrap-reverse;
     }
+    #col-jobs {
+        padding: 5%;
+    }
     #static-top {
         height: 580px;
     }
