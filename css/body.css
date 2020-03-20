@@ -318,7 +318,6 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
 .align img {
     width: 15%;
     margin-bottom: 5%;
-    flex: 1;
 }
 
 #contact footer {

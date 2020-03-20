@@ -8,6 +8,9 @@
     #static-top {
         height: 580px;
     }
+    #col-jobs {
+        padding: 5%;
+    }
     .layer-text, .layer-img {
         display: flex;
         margin: 0% 6%;
