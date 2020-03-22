@@ -2,7 +2,7 @@ html, body {
     overflow-x: hidden;
 }
 
-#work, #skills, #contact {
+#work, #skills, #blogs, #contact {
     display: flex;
     margin-top: 2%;
 }
@@ -14,13 +14,12 @@ html, body {
 .wrapper2 {
     flex-flow: column;
     text-align: center;
-    background-color: #fafafa;
     text-shadow: 1px 1px 0px #fff;
 }
 
 header {
     display: block;
-    margin: 0 0 3em 0;
+    margin: 2% auto;
 }
 
 header>p {
@@ -73,7 +72,7 @@ section p {
     padding: 3em 2em 3.5em 2em;
 }
 
-#me, #skills {
+#biography, #skills, #resume, #blogs {
     background: #fff;
     box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -89,22 +88,27 @@ section p {
 .container-justified {
     display: flex;
     width: 90%;
-    margin: 0 auto;
     color: #000;
     text-align: justify;
-    flex-flow: wrap;
+    margin: 0 auto;
     padding-bottom: 5%;
+    justify-content: center;
 }
 
 .c-img {
     width: 20%;
 }
-
+.bio {
+    width: 40%;
+}
 .c-img img {
     border-radius: 5%;
 }
-
+.align img:hover {
+    top: -5px;
+}
 .c-text {
+    flex-direction: column;
     width: 70%;
     margin-top: 0%;
 }
@@ -221,7 +225,7 @@ input[type="reset"].alt, button.alt, .button.alt {
     box-shadow: inset 0px 0px 0px 1px #242424, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2);
 }
 
-input[type="button"], input[type="submit"], input[type="reset"], button, .button {
+input[type="submit"], input[type="submit"], input[type="reset"], button, .button {
     background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
     background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
     background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
@@ -278,7 +282,7 @@ h3 {
     letter-spacing: -0.015em;
 }
 
-input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .button:hover {
+input[type="submit"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .button:hover {
     background-color: #e91616e5;
     color: #fff !important;
 }
@@ -292,7 +296,7 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
     margin-left: 3%;
 }
 
-#skills {
+#skills, #blogs {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -300,7 +304,7 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
     align-items: stretch;
 }
 
-.hard, .soft {
+.hard, .soft, .posts {
     display: flex;
     flex-flow: column wrap;
 }
@@ -309,19 +313,36 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
     background: #e4f7f5;
 }
 
-.align {
+.align, .align div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.align img {
+.align>img {
     width: 15%;
     margin-bottom: 5%;
+}
+.align img {
+    position: relative;
+}
+.align>div {
+    width: 140px;
+    margin: 5%;
+}
+
+.align>div>p {
+    font-size: 15px;
+    color: black;
+    width: 100%;
 }
 
 #contact footer {
     font-size: 0.9em;
+}
+
+.c-text p {
+    margin: 5%;
 }
 
 footer {

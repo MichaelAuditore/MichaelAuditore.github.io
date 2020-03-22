@@ -3,7 +3,6 @@ $(document).ready(menu());
 var contador = 1;
 
 function menu() {
-
     $('#menu').click(function () {
         if (contador == 1) {
             $("#nav").addClass('responsive-nav');

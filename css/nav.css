@@ -49,10 +49,17 @@ nav {
     line-height: 2.5em;
     padding: 0 1.25em;
 }
+#nav a:hover {
+    transition-duration: 1s;
+}
+
+.item-menu:hover {
+    background: #383838;
+    border-radius: 10%;
+}
 
 #nav a:hover {
-    color: #fff !important;
-    background: #383838;
+    color: #b50e0e !important;
 }
 
 a {
@@ -86,4 +93,7 @@ li, span, form {
     padding-left: 0;
     margin: 0 auto;
 }
-
+#nav .container {
+    display: flex;
+    justify-content: center;
+}

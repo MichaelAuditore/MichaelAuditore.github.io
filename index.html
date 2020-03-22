@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Michael CO</title>
+	<title>Miguel Cañon - Fullstack Software Engineer</title>
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/layer.css">
 	<link rel="stylesheet" href="css/body.css">
@@ -15,11 +15,13 @@
 <body>
 	<nav id=nav>
 		<ul class="container">
-			<li id="menu"><a>Menu</a></li>
+			<li id="menu"><img src="images/menu.png" width="15%" alt=""></li>
 			<li class="item-menu"><a href="#top" onclick="navigation(this.id)">Top</a></li>
-			<li class="item-menu"><a href="#me" onclick="navigation(this.id)">About Me</a></li>
+			<li class="item-menu"><a href="#biography" onclick="navigation(this.id)">Bio</a></li>
+			<li class="item-menu"><a href="#resume" onclick="navigation(this.id)">About</a></li>
 			<li class="item-menu"><a href="#work" onclick="navigation(this.id)">Work</a></li>
 			<li class="item-menu"><a href="#skills" onclick="navigation(this.id)">Skills</a></li>
+			<li class="item-menu"><a href="#blogs" onclick="navigation(this.id)">Blog</a></li>
 			<li class="item-menu"><a href="#contact" onclick="navigation(this.id)">Contact</a></li>
 		</ul>
 	</nav>
@@ -40,59 +42,60 @@
 			</div>
 			<div class="layer-img">
 				<span class="image fit">
-					<img src="images/photo.jpg" alt="">
+					<img src="images/main.PNG" alt="">
 				</span>
 			</div>
 		</div>
 	</div>
-	<article id="me" class="wrapper2">
+	<article id="biography" class="wrapper2">
 		<div class="container">
 			<header>
-				<h2>ABOUT ME</h2>
+				<h2>BIO-FACTS</h2>
 			</header>
 		</div>
 
 		<div class="container-justified">
 
-			<div class="c-img">
-				<img src="images/tech.jfif" width="100%" alt="">
+			<div class="c-img bio">
+				<img src="images/photo.jpg" alt="" width="100%">
 			</div>
 			<div class="c-text">
 				<p>
 					My name is Miguel Angel Parada Cañon, I'm 22 years old, I was born in Bogotá on June 6th of 1998,
 					since
-					I was a child a had passion for tech, I began learning about Computers, how their work and which are
+					I was a child a had passion for tech; I began learning about Computers, how they work and which are
 					the
-					main computer's parts, years ago I learnt some about JAVA language, and I think "the man could
-					create
-					things, I would like to create something that someone more find out special or useful".
+					main parts. Years ago I learned a bit about JAVA language, and I thought "I would like to create
+					something that someone else could find special or useful using this".
+				</p>
+				<p>
+					Apart from that I'm a very dedicated person, I like to learn about different things, and
+					in my
+					free
+					time I like to go to parks, read books, and when I have a lot of time, I enjoy learning how to
+					cook new
+					recipes and desserts,
+					Chocolate and fruits are my thing. I like to do exercise some times although I'm a little
+					lazy in that aspect.
 				</p>
 			</div>
-			<div class="orientation">
-				<div class="c-text">
-					<p>
-						Apart from that I'm a very dedicated person, I like to learning more about different things, and
-						my
-						free
-						times I like to going to parks, read books, when I have a lot of time, I like to learning about
-						cook, new
-						recipes and desserts,
-						I like Chocolate and fruits a lot. I like to do exercise some times although I'm a little
-						lazy.
-					</p>
-				</div>
-				<div class="c-img">
-					<img src="images/chocolate.jfif" width="100%" alt="">
-				</div>
-			</div>
+		</div>
+	</article>
+	<article id="resume" class="wrapper2">
+		<div class="container">
+			<header>
+				<h2>ABOUT</h2>
+			</header>
+		</div>
+
+		<div class="container-justified">
 			<div class="c-img">
 				<img src="images/hire me.webp" width="100%" alt="">
 			</div>
 			<div class="c-text">
 				<p>
-					I want to let you know,this page was created using my own property styles and my knowledge.
-					You are taking your time, nop? I know what you are thinking, why is the main reason that you should
-					hire me.
+					I know what you are thinking, Why is the main reason that you <b>should
+					hire me.</b>
 					I believe that my experience with technology, specifically in the web design space, makes me the
 					best
 					match for this position. In my previous job, I was responsible for maintaining and updating our
@@ -109,7 +112,7 @@
 	<article id="work" class="wrapper2">
 		<div class="container">
 			<header>
-				<h2>I've been worked with this companies</h2>
+				<h2>I've worked with these companies</h2>
 				<p>All of these are certified</p>
 			</header>
 		</div>
@@ -143,7 +146,9 @@
 		</div>
 	</article>
 	<article id="skills" class="wrapper2">
-		<h3>Hard Skills</h3>
+		<header>
+			<h2>HARD SKILLS</h2>
+		</header>
 		<div class="hard">
 			<div class="align">
 				<img src="images/js.jpg" alt="JavaScript">
@@ -156,7 +161,9 @@
 				<img src="images/php.png" alt="mysql">
 			</div>
 		</div>
-		<h3>Soft Skills</h3>
+		<header>
+			<h2>SOFT SKILLS</h2>
+		</header>
 		<div class="soft" background="#e4f7f5">
 			<div class="align">
 				<img src="images/assertive.PNG" alt="assertive">
@@ -168,6 +175,41 @@
 				<img src="images/responsability.PNG" alt="responsability">
 				<img src="images/self.PNG" alt="self-control">
 				<img src="images/communication.PNG" alt="clear-communication">
+			</div>
+		</div>
+	</article>
+	<article id="blogs" class="wrapper2">
+		<header>
+			<h2>BLOG POSTS</h2>
+		</header>
+		<div class="align">
+			<div>
+				<img src="images/console.png" alt="">
+				<p>LS command</p>
+			</div>
+			<div>
+				<img src="images/dll.png" alt="">
+				<p>Dynamic Libraries</p>
+			</div>
+			<div>
+				<img src="images/mutable.png" alt="">
+				<p>Data Types</p>
+			</div>
+			<div>
+				<img src="images/binary.png" alt="">
+				<p>Signed Numbers</p>
+			</div>
+			<div>
+				<img src="images/static.png" alt="">
+				<p>Static Libraries</p>
+			</div>
+			<div>
+				<img src="images/gcc.png" alt="">
+				<p>GCC</p>
+			</div>
+			<div>
+				<img src="images/hardl.png" alt="">
+				<p>Hard links</p>
 			</div>
 		</div>
 	</article>

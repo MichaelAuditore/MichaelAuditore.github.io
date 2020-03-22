@@ -7,7 +7,6 @@
 }
 .wrapper {
     transform: scale(1.0);
-    -webkit-backface-visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -83,6 +82,8 @@
 }
 
 .layer-img .image img {
+    width: 320px;
+    height: 320px;
     border-radius: 100%;
 }
 

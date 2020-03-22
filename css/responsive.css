@@ -5,6 +5,12 @@
     .layer-flex {
         flex-flow: row-reverse wrap-reverse;
     }
+    .b-img img {
+        width: 100%;
+    }
+    .b-img {
+        width: 100%;
+    }
     #col-jobs {
         padding: 5%;
     }
@@ -81,7 +87,7 @@
         margin-left: -15px;
     }
     header {
-        margin: 0 0 2em 0;
+        margin: 0 auto;
         width: 90%;
     }
     header>p {
@@ -109,7 +115,7 @@
         display: flex;
         flex-direction: column-reverse;
     }
-    #me .container {
+    #biography .container {
         justify-content: center;
     }
 }
@@ -120,6 +126,17 @@
     }
     #col-jobs {
         padding: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .align>div {
+        width: 50px;
+        margin: 5%;
+    }
+    .align>div>p {
+        font-size: 12px;
+        color: black;
     }
 }
 
@@ -141,11 +158,15 @@
     .responsive-nav {
         display: block;
         transition-duration: 0.1s;
-        height: 20.5em!important;
+        height: 28em!important;
+    }
+    #nav li {
+        padding-left: 2%;
+        border-radius: 0%;
     }
     .responsive-layer-img {
         transition-duration: 0.5s;
-        margin-top: 80%;
+        margin-top: 25em;
     }
     .display_li {
         display: flex!important;
