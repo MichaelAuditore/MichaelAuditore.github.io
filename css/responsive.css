@@ -5,12 +5,6 @@
     .layer-flex {
         flex-flow: row-reverse wrap-reverse;
     }
-    .b-img img {
-        width: 100%;
-    }
-    .b-img {
-        width: 100%;
-    }
     #col-jobs {
         padding: 5%;
     }
@@ -129,17 +123,6 @@
     }
 }
 
-@media screen and (max-width: 900px) {
-    .align>div {
-        width: 50px;
-        margin: 5%;
-    }
-    .align>div>p {
-        font-size: 12px;
-        color: black;
-    }
-}
-
 @media (max-width:530px) {
     /*Navbar responsive*/
     .container {
@@ -154,6 +137,14 @@
     }
     #nav>ul.container>li>div {
         margin-left: 30px;
+    }
+    .posts div img {
+        width: 100px;
+    }
+    .posts div {
+        width: 50%;
+        padding-bottom: 1%;
+        padding: 4%;
     }
     .responsive-nav {
         display: block;

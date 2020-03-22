@@ -98,15 +98,19 @@ section p {
 .c-img {
     width: 20%;
 }
+
 .bio {
     width: 40%;
 }
+
 .c-img img {
     border-radius: 5%;
 }
+
 .align img:hover {
     top: -5px;
 }
+
 .c-text {
     flex-direction: column;
     width: 70%;
@@ -304,7 +308,7 @@ input[type="submit"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
     align-items: stretch;
 }
 
-.hard, .soft, .posts {
+.hard, .soft {
     display: flex;
     flex-flow: column wrap;
 }
@@ -313,22 +317,32 @@ input[type="submit"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
     background: #e4f7f5;
 }
 
-.align, .align div {
+.posts {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.posts div a {
+    color: #a20c0c;
 }
 
 .align>img {
     width: 15%;
     margin-bottom: 5%;
 }
+
 .align img {
     position: relative;
 }
-.align>div {
-    width: 10%;
-    margin: 5%;
+
+.posts div {
+    padding-bottom: 1%;
+}
+
+.posts div img {
+    width: 140px;
+    padding: 10%;
 }
 
 .align>div>p {
