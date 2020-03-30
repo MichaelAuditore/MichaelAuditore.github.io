@@ -263,6 +263,10 @@ body, input, textarea, select {
     font-size: 13pt;
 }
 
+.typed {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .wrapper4 h3 {
     color: #fff;
 }

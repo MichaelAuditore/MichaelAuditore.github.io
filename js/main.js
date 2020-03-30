@@ -1,7 +1,7 @@
 
 const typed = new Typed('.typed', {
 	strings: [
-		"<i class='ani-text'>404 Page not Found<br><br>Ceci n'est pas une page.</i>",
+		"<i class='ani-text'>Ceci n'est pas une page.<br><br>404 Page not Found</i>",
 	],
 
 	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
