@@ -6,6 +6,8 @@ body {
 
 .container-padding50 {
 	padding-top: 50px;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .wait {
@@ -39,9 +41,14 @@ body {
 	border-radius: 5px;
 }
 
+.container-button:hover {
+	background-color: rgb(4, 73, 4);
+}
+
 .container-image {
 	width: 30%;
 	display: block;
 	float: left;
 	margin-right: 3%;
+	margin: 1%;
 }
