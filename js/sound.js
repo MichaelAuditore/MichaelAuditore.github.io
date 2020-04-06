@@ -10,8 +10,6 @@ UI.pressEnter = function (e) {
     });
 }
 
-UI.pressEnter();
-
 UI.submitClick = function () {
     var input = document.querySelector(".input-search").value;
     var button = document.querySelector(".js-submit");
@@ -20,9 +18,17 @@ UI.submitClick = function () {
     });
 
 }
-
+UI.cleanlist = function () {
+    var button = document.querySelector("input[type=button]");
+    button.addEventListener("click", function () {
+        var sideBar = document.querySelector(".js-playlist");
+        sideBar.innerHTML = "";
+        localStorage.clear();
+    });
+}
+UI.pressEnter();
 UI.submitClick();
-
+UI.cleanlist();
 /* 2. Query Soundcloud API */
 SoundCloudAPI = {};
 
@@ -39,8 +45,6 @@ SoundCloudAPI.getTrack = function (inputValue) {
     SC.get('/tracks', {
         genres: inputValue
     }).then(function (tracks) {
-        var searchResults = document.querySelector(".js-search-results");
-        searchResults.innerHTML = "";
         SoundCloudAPI.renderTracks(tracks);
     });
 
@@ -61,7 +65,7 @@ SoundCloudAPI.renderTracks = function (tracks) {
 
         var image_img = document.createElement('img');
         image_img.classList.add("image_img");
-        image_img.src = track.artwork_url || "css/themes/default/assets/images/default.jpg";
+        image_img.src = track.artwork_url || "style/themes/default/assets/images/default.jpg";
 
 
         imageDiv.appendChild(image_img);

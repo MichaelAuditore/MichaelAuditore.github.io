@@ -1,0 +1,38 @@
+footer {
+    font-size: 0.9em;
+    margin: 3em 0 0 0;
+}
+
+#copyright {
+    color: #666;
+    font-size: 1em;
+    line-height: 1em;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#copyright li:first-child {
+    border: 0;
+    box-shadow: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#copyright li {
+    display: inline-block;
+    border-left: solid 1px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
+    padding: 0 0 0 1em;
+    padding-left: 1em;
+    margin: 0 0 0 1em;
+    margin-left: 1em;
+}
+
+#copyright a {
+    -moz-transition: color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    color: inherit;
+}

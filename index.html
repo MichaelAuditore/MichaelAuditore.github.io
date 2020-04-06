@@ -10,274 +10,300 @@
 	<link rel="stylesheet" href="css/body.css">
 	<link rel="stylesheet" href="css/social.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
-	<nav id=nav>
-		<ul class="container">
-			<li id="menu"><img src="images/menu.png" alt=""></li>
-			<li class="item-menu"><a href="#top" onclick="navigation(this.id)">Top</a></li>
-			<li class="item-menu"><a href="#biography" onclick="navigation(this.id)">Bio</a></li>
-			<li class="item-menu"><a href="#resume" onclick="navigation(this.id)">About</a></li>
-			<li class="item-menu"><a href="#work" onclick="navigation(this.id)">Work</a></li>
-			<li class="item-menu"><a href="#skills" onclick="navigation(this.id)">Skills</a></li>
-			<li class="item-menu"><a href="#blogs" onclick="navigation(this.id)">Blog</a></li>
-			<li class="item-menu"><a href="#contact" onclick="navigation(this.id)">Contact</a></li>
-		</ul>
-	</nav>
+	<div class="flex-page">
+		<div class="nav-res">
+			<nav id=nav>
+				<ul class="container">
+					<li id="menu"><img src="images/menu.png" alt=""></li>
+					<li class="item-menu"><a href="#top" onclick="navigation(this.id)">Top</a></li>
+					<li class="item-menu"><a href="#biography" onclick="navigation(this.id)">Bio</a></li>
+					<li class="item-menu"><a href="#resume" onclick="navigation(this.id)">About</a></li>
+					<li class="item-menu"><a href="#work" onclick="navigation(this.id)">Work</a></li>
+					<li class="item-menu"><a href="#skills" onclick="navigation(this.id)">Skills</a></li>
+					<li class="item-menu"><a href="#blogs" onclick="navigation(this.id)">Blog</a></li>
+					<li class="item-menu"><a href="#contact" onclick="navigation(this.id)">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="data-res">
+			<article id="top" class="wrapper">
+				<div id=layer></div>
+			</article>
+			<div id=static-top>
+				<div class="layer-flex">
+					<div class="layer-text">
+						<div class="text">
+							<span class="typed"></span>
+							<p></p>
 
-	<article id="top" class="wrapper">
-		<div id=layer></div>
-	</article>
-	<div id=static-top>
-		<div class="layer-flex">
-			<div class="layer-text">
-				<div class="text">
-					<span class="typed"></span>
-					<p></p>
-
+						</div>
+					</div>
+					<div class="layer-img">
+						<span class="image fit">
+							<img src="images/main.PNG" alt="">
+						</span>
+					</div>
 				</div>
 			</div>
-			<div class="layer-img">
-				<span class="image fit">
-					<img src="images/main.PNG" alt="">
-				</span>
-			</div>
+			<article id="biography" class="wrapper2">
+				<div class="container">
+					<header>
+						<h2>BIO-FACTS</h2>
+					</header>
+				</div>
+
+				<div class="container-justified">
+
+					<div class="c-img bio">
+						<img src="images/photo.jpg" alt="" width="100%">
+					</div>
+					<div class="c-text">
+						<p>
+							My name is Miguel Angel Parada Cañon, I'm 22 years old, I was born in Bogotá on June 6th of
+							1998,
+							since
+							I was a child a had passion for tech; I began learning about Computers, how they work and
+							which
+							are
+							the
+							main parts. Years ago I learned a bit about JAVA language, and I thought "I would like to
+							create
+							something that someone else could find special or useful using this".
+						</p>
+						<p>
+							Apart from that I'm a very dedicated person, I like to learn about different things, and
+							in my
+							free
+							time I like to go to parks, read books, and when I have a lot of time, I enjoy learning how
+							to
+							cook new
+							recipes and desserts,
+							Chocolate and fruits are my thing. I like to do exercise some times although I'm a little
+							lazy in that aspect.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article id="resume" class="wrapper2">
+				<div class="container">
+					<header>
+						<h2>ABOUT</h2>
+					</header>
+				</div>
+
+				<div class="container-justified">
+					<div class="c-img">
+						<img src="images/hire me.webp" width="100%" alt="">
+					</div>
+					<div class="c-text">
+						<p>
+							I know what you are thinking, Why is the main reason that you <b>should
+								hire me.</b>
+							I believe that my experience with technology, specifically in the web design space, makes me
+							the
+							best
+							match for this position. In my previous job, I was responsible for maintaining and updating
+							our
+							company
+							website. This required keeping employee profiles updated and continuously posting
+							information
+							regarding
+							upcoming events. I truly enjoyed what I was doing, which is what drew me to this position
+							with
+							your
+							company. I would love to bring the coding and content skills I learned there to this
+							position.
+						</p>
+					</div>
+
+				</div>
+			</article>
+			<article id="work" class="wrapper2">
+				<div class="container">
+					<header>
+						<h2>I've worked with these companies</h2>
+						<p>All of these are certified</p>
+					</header>
+				</div>
+				<div id="row-jobs">
+					<div id="col-jobs">
+						<section class="box style1">
+							<span><img src="images/fuheco.jfif" alt=""></span>
+							<h3>Fundacion Hematologica Colombia</h3>
+							<p>I did the designs from my web applications by directives of the company without using
+								Frameworks,
+								also I did the
+								back-end using PHP, JavaScript, and PosgreSQL</p>
+						</section>
+					</div>
+					<div id="col-jobs">
+						<section class="box style1">
+							<span><img src="images/saucotech.PNG" class="saucotech" alt=""></span>
+							<h3>Sauco Technologies</h3>
+							<p>Develop Back-end from Web Applications using JAVA language and MySQL, also we did
+								projects
+								using
+								Angular JS</p>
+						</section>
+					</div>
+					<div id="col-jobs">
+						<section class="box style1">
+							<span><img src="images/holberton.png" alt=""></span>
+							<h3>Holberton</h3>
+							<p>Develop applications using C, JS and Python Language, infrastructure installation and
+								configuration,
+								creation of API's, databases MySQL</p>
+						</section>
+					</div>
+				</div>
+			</article>
+			<article id="skills" class="wrapper2">
+				<header>
+					<h2>HARD SKILLS</h2>
+				</header>
+				<div class="hard">
+					<div class="align">
+						<img src="images/js.jpg" alt="JavaScript">
+						<img src="images/C.png" alt="C">
+						<img src="images/flutter.png" alt="flutter">
+						<img src="images/java.png" alt="java">
+						<img src="images/python.png" alt="python">
+						<img src="images/html.png" alt="html">
+						<img src="images/mysql.png" alt="mysql">
+						<img src="images/php.png" alt="mysql">
+					</div>
+				</div>
+				<header>
+					<h2>SOFT SKILLS</h2>
+				</header>
+				<div class="soft" background="#e4f7f5">
+					<div class="align">
+						<img src="images/assertive.PNG" alt="assertive">
+						<img src="images/empathy.PNG" alt="empathy">
+						<img src="images/humor.PNG" alt="humor">
+						<img src="images/conflict.PNG" alt="resolution-conflict">
+						<img src="images/listening.PNG	" alt="listening">
+						<img src="images/positive.PNG" alt="positive">
+						<img src="images/responsability.PNG" alt="responsability">
+						<img src="images/self.PNG" alt="self-control">
+						<img src="images/communication.PNG" alt="clear-communication">
+					</div>
+				</div>
+			</article>
+			<article id="blogs" class="wrapper2">
+				<header>
+					<h2>BLOG POSTS</h2>
+				</header>
+				<div class="posts">
+					<div>
+						<img src="images/console.png" alt="console">
+						<br>
+						<a
+							href="https://medium.com/@miguelangelcaon/if-you-can-see-it-and-you-look-for-to-know-what-do-this-command-ffad0f6a163">LS
+							command</a>
+					</div>
+					<div>
+						<img src="images/dll.png" alt="dll">
+						<br>
+						<a href="https://medium.com/@miguelangelcaon/dynamic-libraries-in-c-57dc606eb9a0">Dynamic
+							Libraries</a>
+					</div>
+					<div>
+						<img src="images/mutable.png" alt="mutable">
+						<br>
+						<a href="https://medium.com/@miguelangelcaon/python-mutable-and-inmmutable-types-ca866ac82c0b">Data
+							Types</p>
+					</div>
+					<div>
+						<img src="images/binary.png" alt="binary">
+						<br>
+						<a href="https://medium.com/@miguelangelcaon/binary-signed-numbers-2cbf7522d322">Signed
+							Numbers</a>
+					</div>
+					<div>
+						<img src="images/static.png" alt="static">
+						<br>
+						<a href="https://medium.com/@miguelangelcaon/c-static-libraries-17b4c1048ed7">Static
+							Libraries</a>
+					</div>
+					<div>
+						<img src="images/gcc.png" alt="gcc">
+						<br>
+						<a
+							href="https://medium.com/@miguelangelcaon/what-happens-when-you-type-gcc-main-c-b58ccdf8cba1">GCC</a>
+					</div>
+					<div>
+						<img src="images/hardl.png" alt="hardl">
+						<br>
+						<a
+							href="https://medium.com/@miguelangelcaon/difference-between-a-hard-link-and-a-symbolic-link-c46f64c96b26">Hard
+							links</a>
+					</div>
+				</div>
+			</article>
+			<article id="contact" class="wrapper4">
+				<div class="container medium">
+					<header>
+						<h2>Send me a message.</h2>
+						<p></p>
+					</header>
+					<div class="row">
+						<div class="entire">
+							<form method="post" name="my_form" action="mailto:michael_v613@hotmail.com">
+								<div class="row">
+									<div class="col-mid entire-small">
+										<input type="text" name="name" id="name" placeholder="Name">
+									</div>
+									<div class="col-mid entire-small">
+										<input type="text" name="email" id="email" placeholder="Email">
+									</div>
+									<div class="entire">
+										<input type="text" name="subject" id="subject" placeholder="Subject">
+									</div>
+									<div class="entire">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<div class="entire">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message"></li>
+											<li><input type="reset" value="Clear Form" class="alt"></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="entire">
+							<hr>
+							<h3>Find me on ...</h3>
+							<ul class="social">
+								<li><a href="https://www.twitter.com/@v613Michael" class="icon brands twitter"><span
+											class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/Miguel.A.Canon613"
+										class="icon brands facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/in/miguel-angel-parada-ca%C3%B1on-a6998812a/"
+										class="icon brands linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/MichaelAuditore" class="icon brands github"><span
+											class="label">Github</span></a></li>
+							</ul>
+							<hr>
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>© Miguel Angel Parada Cañon. All rights reserved.</li>
+							<li>Design: <a href="https://github.com/MichaelAuditore">MichaelAuditore</a></li>
+							<li><a href="privacy.html">Privacy Policy</a></li>
+						</ul>
+					</footer>
+				</div>
+			</article>
 		</div>
 	</div>
-	<article id="biography" class="wrapper2">
-		<div class="container">
-			<header>
-				<h2>BIO-FACTS</h2>
-			</header>
-		</div>
 
-		<div class="container-justified">
-
-			<div class="c-img bio">
-				<img src="images/photo.jpg" alt="" width="100%">
-			</div>
-			<div class="c-text">
-				<p>
-					My name is Miguel Angel Parada Cañon, I'm 22 years old, I was born in Bogotá on June 6th of 1998,
-					since
-					I was a child a had passion for tech; I began learning about Computers, how they work and which are
-					the
-					main parts. Years ago I learned a bit about JAVA language, and I thought "I would like to create
-					something that someone else could find special or useful using this".
-				</p>
-				<p>
-					Apart from that I'm a very dedicated person, I like to learn about different things, and
-					in my
-					free
-					time I like to go to parks, read books, and when I have a lot of time, I enjoy learning how to
-					cook new
-					recipes and desserts,
-					Chocolate and fruits are my thing. I like to do exercise some times although I'm a little
-					lazy in that aspect.
-				</p>
-			</div>
-		</div>
-	</article>
-	<article id="resume" class="wrapper2">
-		<div class="container">
-			<header>
-				<h2>ABOUT</h2>
-			</header>
-		</div>
-
-		<div class="container-justified">
-			<div class="c-img">
-				<img src="images/hire me.webp" width="100%" alt="">
-			</div>
-			<div class="c-text">
-				<p>
-					I know what you are thinking, Why is the main reason that you <b>should
-						hire me.</b>
-					I believe that my experience with technology, specifically in the web design space, makes me the
-					best
-					match for this position. In my previous job, I was responsible for maintaining and updating our
-					company
-					website. This required keeping employee profiles updated and continuously posting information
-					regarding
-					upcoming events. I truly enjoyed what I was doing, which is what drew me to this position with your
-					company. I would love to bring the coding and content skills I learned there to this position.
-				</p>
-			</div>
-
-		</div>
-	</article>
-	<article id="work" class="wrapper2">
-		<div class="container">
-			<header>
-				<h2>I've worked with these companies</h2>
-				<p>All of these are certified</p>
-			</header>
-		</div>
-		<div id="row-jobs">
-			<div id="col-jobs">
-				<section class="box style1">
-					<span><img src="images/fuheco.jfif" alt=""></span>
-					<h3>Fundacion Hematologica Colombia</h3>
-					<p>I did the designs from my web applications by directives of the company without using Frameworks,
-						also I did the
-						back-end using PHP, JavaScript, and PosgreSQL</p>
-				</section>
-			</div>
-			<div id="col-jobs">
-				<section class="box style1">
-					<span><img src="images/saucotech.PNG" class="saucotech" alt=""></span>
-					<h3>Sauco Technologies</h3>
-					<p>Develop Back-end from Web Applications using JAVA language and MySQL, also we did projects using
-						Angular JS</p>
-				</section>
-			</div>
-			<div id="col-jobs">
-				<section class="box style1">
-					<span><img src="images/holberton.png" alt=""></span>
-					<h3>Holberton</h3>
-					<p>Develop applications using C, JS and Python Language, infrastructure installation and
-						configuration,
-						creation of API's, databases MySQL</p>
-				</section>
-			</div>
-		</div>
-	</article>
-	<article id="skills" class="wrapper2">
-		<header>
-			<h2>HARD SKILLS</h2>
-		</header>
-		<div class="hard">
-			<div class="align">
-				<img src="images/js.jpg" alt="JavaScript">
-				<img src="images/C.png" alt="C">
-				<img src="images/flutter.png" alt="flutter">
-				<img src="images/java.png" alt="java">
-				<img src="images/python.png" alt="python">
-				<img src="images/html.png" alt="html">
-				<img src="images/mysql.png" alt="mysql">
-				<img src="images/php.png" alt="mysql">
-			</div>
-		</div>
-		<header>
-			<h2>SOFT SKILLS</h2>
-		</header>
-		<div class="soft" background="#e4f7f5">
-			<div class="align">
-				<img src="images/assertive.PNG" alt="assertive">
-				<img src="images/empathy.PNG" alt="empathy">
-				<img src="images/humor.PNG" alt="humor">
-				<img src="images/conflict.PNG" alt="resolution-conflict">
-				<img src="images/listening.PNG	" alt="listening">
-				<img src="images/positive.PNG" alt="positive">
-				<img src="images/responsability.PNG" alt="responsability">
-				<img src="images/self.PNG" alt="self-control">
-				<img src="images/communication.PNG" alt="clear-communication">
-			</div>
-		</div>
-	</article>
-	<article id="blogs" class="wrapper2">
-		<header>
-			<h2>BLOG POSTS</h2>
-		</header>
-		<div class="posts">
-			<div>
-				<img src="images/console.png" alt="console">
-				<br>
-				<a
-					href="https://medium.com/@miguelangelcaon/if-you-can-see-it-and-you-look-for-to-know-what-do-this-command-ffad0f6a163">LS
-					command</a>
-			</div>
-			<div>
-				<img src="images/dll.png" alt="dll">
-				<br>
-				<a href="https://medium.com/@miguelangelcaon/dynamic-libraries-in-c-57dc606eb9a0">Dynamic Libraries</a>
-			</div>
-			<div>
-				<img src="images/mutable.png" alt="mutable">
-				<br>
-				<a href="https://medium.com/@miguelangelcaon/python-mutable-and-inmmutable-types-ca866ac82c0b">Data
-					Types</p>
-			</div>
-			<div>
-				<img src="images/binary.png" alt="binary">
-				<br>
-				<a href="https://medium.com/@miguelangelcaon/binary-signed-numbers-2cbf7522d322">Signed Numbers</a>
-			</div>
-			<div>
-				<img src="images/static.png" alt="static">
-				<br>
-				<a href="https://medium.com/@miguelangelcaon/c-static-libraries-17b4c1048ed7">Static Libraries</a>
-			</div>
-			<div>
-				<img src="images/gcc.png" alt="gcc">
-				<br>
-				<a href="https://medium.com/@miguelangelcaon/what-happens-when-you-type-gcc-main-c-b58ccdf8cba1">GCC</a>
-			</div>
-			<div>
-				<img src="images/hardl.png" alt="hardl">
-				<br>
-				<a
-					href="https://medium.com/@miguelangelcaon/difference-between-a-hard-link-and-a-symbolic-link-c46f64c96b26">Hard
-					links</a>
-			</div>
-		</div>
-	</article>
-	<article id="contact" class="wrapper4">
-		<div class="container medium">
-			<header>
-				<h2>Send me a message.</h2>
-				<p></p>
-			</header>
-			<div class="row">
-				<div class="entire">
-					<form method="post" name="my_form" action="mailto:michael_v613@hotmail.com">
-						<div class="row">
-							<div class="col-mid entire-small">
-								<input type="text" name="name" id="name" placeholder="Name">
-							</div>
-							<div class="col-mid entire-small">
-								<input type="text" name="email" id="email" placeholder="Email">
-							</div>
-							<div class="entire">
-								<input type="text" name="subject" id="subject" placeholder="Subject">
-							</div>
-							<div class="entire">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
-							</div>
-							<div class="entire">
-								<ul class="actions">
-									<li><input type="submit" value="Send Message"></li>
-									<li><input type="reset" value="Clear Form" class="alt"></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="entire">
-					<hr>
-					<h3>Find me on ...</h3>
-					<ul class="social">
-						<li><a href="https://www.twitter.com/@v613Michael" class="icon brands twitter"><span
-									class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/Miguel.A.Canon613" class="icon brands facebook"><span
-									class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/in/miguel-angel-parada-ca%C3%B1on-a6998812a/"
-								class="icon brands linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/MichaelAuditore" class="icon brands github"><span
-									class="label">Github</span></a></li>
-					</ul>
-					<hr>
-				</div>
-			</div>
-			<footer>
-				<ul id="copyright">
-					<li>© Miguel Angel Parada Cañon. All rights reserved.</li>
-					<li>Design: <a href="https://github.com/MichaelAuditore">MichaelAuditore</a></li>
-				</ul>
-			</footer>
-		</div>
-	</article>
 	<!--JS documents-->
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 	<script src="js/jquery-3.4.1.js"></script>

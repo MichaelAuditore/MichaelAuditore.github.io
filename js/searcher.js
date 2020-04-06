@@ -29,19 +29,20 @@ function search(input) {
 function pushToDOM(input) {
     var container = document.getElementsByClassName("js-container")[0];
     var response = JSON.parse(input);
-    var content = "";
-    container.innerHTML = content;
+    container.innerHTML = "";
     var imageUrls = response.data;
+    var i = 0;
     imageUrls.forEach(function (image) {
+        i++;
         var src = image.images.fixed_height.url;
-        content += "<img src=\"" + src + "\"class=\"container-image\">";
+        
         
         document.getElementById("waitimage").style.display = "block";
 
         setTimeout(function () {
             document.getElementById("waitimage").style.display = "none";
-            container.innerHTML = content;
-        }, 1000);
+            container.innerHTML += "<img src=\"" + src + "\"class=\"container-image\">";
+        }, 800 * i);
     });
 }
 
