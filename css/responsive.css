@@ -363,4 +363,18 @@
     .c-img .c-text {
         width: 100%;
     }
+    .layer-img{
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 1000px){
+    .layer-img {
+        margin-top: 7%;
+    }
+}
+@media (min-width: 1500px) {
+    .layer-img {
+        margin-top: 6%;
+    }
 }
