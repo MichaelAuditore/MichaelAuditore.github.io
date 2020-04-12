@@ -27,7 +27,7 @@
         padding: 5%;
     }
     #static-top {
-        height: 550px;
+        height: 600px;
     }
     #col-jobs {
         padding: 5%;
@@ -259,11 +259,11 @@
         display: flex;
     }
     #static-top {
-        height: 510px;
+        height: 460px;
     }
     #top {
         visibility: visible;
-        padding-bottom: 510px;
+        padding-bottom: 460px;
     }
     .image.fit {
         display: block;
