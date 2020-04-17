@@ -1,13 +1,16 @@
 html, body {
     overflow-x: hidden;
 }
+
 .flex-page {
     display: flex;
     width: 100%;
 }
+
 .data-res {
     width: 100%;
 }
+
 #work, #skills, #blogs, #contact {
     display: flex;
     margin-top: 2%;
@@ -47,11 +50,11 @@ h2, h3 {
     align-items: stretch;
 }
 
-#col-jobs {
+.col-jobs {
     padding: 25px 0 0 25px;
 }
 
-#col-jobs>section>span>img {
+.col-jobs>section>span>img {
     width: 200px;
 }
 
@@ -98,6 +101,32 @@ section p {
     margin: 0 auto;
     padding-bottom: 5%;
     justify-content: center;
+}
+
+.slider-buttons ol {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+.slider-buttons ol li {
+    list-style: none;
+    margin-left: 2%;
+    cursor: pointer;
+    border: solid 1px black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.active {
+    background-image: url("../images/active.jpg");
+    background-size: 100%;
+}
+
+.inactive {
+    background-image: url("../images/inactive.jpg");
+    background-size: 100%;
 }
 
 .c-img {

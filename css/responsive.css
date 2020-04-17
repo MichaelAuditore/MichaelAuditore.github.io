@@ -23,14 +23,11 @@
     .layer-flex {
         flex-flow: row-reverse wrap-reverse;
     }
-    #col-jobs {
+    .col-jobs {
         padding: 5%;
     }
     #static-top {
         height: 600px;
-    }
-    #col-jobs {
-        padding: 5%;
     }
     .layer-text, .layer-img {
         display: flex;
