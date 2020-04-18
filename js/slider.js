@@ -83,8 +83,18 @@ action.graph = function () {
         query.send(handleQueryResponse);
 
         var options = {
+            animation: {
+                duration: 1100,
+                easing: "in",
+                startup: true
+            },
+            legend: { position: 'top', textStyle: { color: 'black', fontSize: 16 } },
             width: '100%',
-            height: '100%'
+            height: '50%',
+            colors: ['black', '#282828'],
+            vAxis: {
+                ticks: [0, 25, 50, 75, 100],
+            }
         }
         function handleQueryResponse(response) {
             var data = response.getDataTable();
