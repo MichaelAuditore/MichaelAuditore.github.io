@@ -221,11 +221,7 @@ div.col-mid, div.entire {
 }
 
 form input[type="text"], form input[type="email"], form input[type="password"], form select, form textarea {
-    -moz-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-    -webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-    -ms-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
     transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-    -webkit-appearance: none;
     display: block;
     border: 0;
     padding: 0.75em;
@@ -266,15 +262,7 @@ input[type="reset"].alt, button.alt, .button.alt {
 }
 
 input[type="submit"], input[type="submit"], input[type="reset"], button, .button {
-    background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    -moz-transition: background-color .2s ease-in-out;
-    -webkit-transition: background-color .2s ease-in-out;
-    -ms-transition: background-color .2s ease-in-out;
     transition: background-color .2s ease-in-out;
-    -webkit-appearance: none;
     position: relative;
     display: inline-block;
     color: #fff !important;

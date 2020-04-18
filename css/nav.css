@@ -9,7 +9,6 @@ body {
     color: #888;
     font-weight: 300;
     font-size: 13pt;
-    -webkit-text-size-adjust: none;
 }
 
 *, ::before, ::after {
@@ -34,9 +33,6 @@ nav {
 }
 
 #nav a {
-    -moz-transition: background-color .2s ease-in-out;
-    -webkit-transition: background-color .2s ease-in-out;
-    -ms-transition: background-color .2s ease-in-out;
     transition: background-color .2s ease-in-out;
     position: relative;
     color: #fff;
@@ -49,6 +45,7 @@ nav {
     line-height: 2.5em;
     padding: 0 1.25em;
 }
+
 #nav a:hover {
     transition-duration: 1s;
 }
@@ -93,6 +90,7 @@ li, span, form {
     padding-left: 0;
     margin: 0 auto;
 }
+
 #nav .container {
     display: flex;
     justify-content: center;

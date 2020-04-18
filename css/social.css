@@ -6,8 +6,6 @@
 }
 
 .icon:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -63,9 +61,6 @@ ul.social li {
 }
 
 ul.social li a {
-    -moz-transition: top .2s ease-in-out;
-    -webkit-transition: top .2s ease-in-out;
-    -ms-transition: top .2s ease-in-out;
     transition: top .2s ease-in-out;
     display: block;
     width: 48px;
@@ -76,13 +71,6 @@ ul.social li a {
 }
 
 ul.social li a:before {
-    background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-    -moz-transition: background-color .2s ease-in-out;
-    -webkit-transition: background-color .2s ease-in-out;
-    -ms-transition: background-color .2s ease-in-out;
     transition: background-color .2s ease-in-out;
     background-color: #444;
     border-radius: 6px;
@@ -144,9 +132,6 @@ ul.social li a:before {
 }
 
 a {
-    -moz-transition: color .2s ease-in-out;
-    -webkit-transition: color .2s ease-in-out;
-    -ms-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
     color: #43B3E0;
     text-decoration: underline;
