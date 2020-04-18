@@ -111,14 +111,16 @@ section p {
 
 .slider-buttons ol li {
     list-style: none;
-    margin-left: 2%;
+    margin-left: 1%;
     cursor: pointer;
     border: solid 1px black;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 100%;
 }
-
+.slider-buttons {
+    padding-bottom: 5%;
+}
 .active {
     background-image: url("../images/active.jpg");
     background-size: 100%;

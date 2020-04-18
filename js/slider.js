@@ -1,11 +1,21 @@
 /* Get Button sliders  */
+$(window).resize(function () {
+    var li = document.querySelectorAll(".slider-buttons ol li")[1];
+    if (li.className === "active") {
+        var list = document.querySelector(".hard .graph");
+        if (list) {
+            action.removegraph();
+        }
+        action.graph();
+    }
+});
 
 var action = {}
 
 var current = document.querySelectorAll(".slider-buttons ol li")[0];
 var next = document.querySelectorAll(".slider-buttons ol li")[1];
 
-action.prev = function (element) {
+action.show = function (element) {
     element.classList.remove("inactive");
     element.classList.add("active");
     if (element === current) {
@@ -22,7 +32,7 @@ action.prev = function (element) {
     }
 }
 
-action.next = function (element) {
+action.hide = function (element) {
     element.classList.add("inactive");
 }
 
@@ -52,16 +62,36 @@ action.skills = function () {
     });
     hard.appendChild(align);
 }
+
 action.graph = function () {
     action.removeskills();
-    var hard = document.querySelector(".hard");
-    var align = document.createElement("div");
-    align.classList.add("align");
-    align.classList.add("graph");
-    var paragraph = document.createElement("p");
-    paragraph.innerHTML = "Hola Soy Miguel";
-    align.appendChild(paragraph);
-    hard.appendChild(align);
+    var chartDiv = document.querySelector('.hard');
+    var div = document.createElement("div");
+    div.classList.add("align");
+    div.classList.add("graph");
+    div.style.width = "100%";
+    div.style.height = "300px";
+    chartDiv.appendChild(div);
+
+
+    url = 'https://docs.google.com/spreadsheets/d/1NdBgX5EPd-zhqUIOpm2exPBjeq5btrH0jC-wTlC8cC8/gviz/tq?range=A:B';
+    google.charts.load('current', { packages: ['corechart', 'bar'] });
+    google.setOnLoadCallback(initialize);
+
+    function initialize() {
+        var query = new google.visualization.Query(url);
+        query.send(handleQueryResponse);
+
+        var options = {
+            width: '100%',
+            height: '100%'
+        }
+        function handleQueryResponse(response) {
+            var data = response.getDataTable();
+            var chart = new google.visualization.ColumnChart(div);
+            chart.draw(data, options);
+        }
+    }
 }
 
 action.removeskills = function () {
@@ -77,16 +107,16 @@ action.removegraph = function () {
         align.remove();
     }
 }
-action.prev(current, next);
-action.next(next, current);
+action.show(current, next);
+action.hide(next, current);
 
 /* Invert functions */
 
 current.addEventListener("click", function () {
-    action.prev(current);
-    action.next(next);
+    action.show(current);
+    action.hide(next);
 });
 next.addEventListener("click", function () {
-    action.prev(next);
-    action.next(current);
+    action.show(next);
+    action.hide(current);
 });
