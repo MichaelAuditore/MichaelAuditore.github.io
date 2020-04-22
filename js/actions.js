@@ -3,7 +3,7 @@ var typed = new Typed('.typed', {
         "<i class='ani-text'>" +
         "I'm Miguel Angel<br>" +
         "Full Stack Developer Junior<br>" +
-        "This website is own my property<br>" +
+        "This website is my property<br>" +
         "Slide down to know About me</i>",
     ],
     stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
