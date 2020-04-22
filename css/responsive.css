@@ -2,13 +2,11 @@
     .c-img {
         width: 100%;
     }
-    
-    .align > img {
+    .align>img {
         width: 100px;
         margin-bottom: 5%;
         height: 100px;
     }
-    
     #nav {
         width: 100%;
     }
@@ -227,6 +225,11 @@
     #nav {
         width: 0%;
     }
+    .align>img {
+        width: 100px;
+        margin-bottom: 5%;
+        height: 100px;
+    }
     .c-img {
         width: 100%!important;
     }
@@ -367,16 +370,17 @@
     .c-img .c-text {
         width: 100%;
     }
-    .layer-img{
+    .layer-img {
         margin-top: 10%;
     }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
     .layer-img {
         margin-top: 7%;
     }
 }
+
 @media (min-width: 1500px) {
     .layer-img {
         margin-top: 6%;

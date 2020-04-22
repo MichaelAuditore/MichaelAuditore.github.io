@@ -44,14 +44,21 @@ action.skills = function () {
     align.classList.add("skills");
     var hskills =
         [
+            { "name": "java", "src": "images/java.png" },
+            { "name": "php", "src": "images/php.png" },
             { "name": "JavaScript", "src": "images/js.jpg" },
+            { "name": "mysql", "src": "images/mysql.png" },
+            { "name": "postgresql", "src": "images/postgresql.png" },
             { "name": "C", "src": "images/C.png" },
             { "name": "flutter", "src": "images/flutter.png" },
-            { "name": "java", "src": "images/java.png" },
             { "name": "python", "src": "images/python.png" },
             { "name": "html", "src": "images/html.png" },
-            { "name": "mysql", "src": "images/mysql.png" },
-            { "name": "php", "src": "images/php.png" },
+            { "name": "css", "src": "images/css.png" },
+            { "name": "git", "src": "images/git.png" },
+            { "name": "linux", "src": "images/linux.png" },
+            { "name": "vim", "src": "images/vim.png" },
+            { "name": "emacs", "src": "images/emacs.png" }
+            
         ];
 
     hskills.forEach(function (object) {
