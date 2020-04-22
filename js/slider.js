@@ -97,6 +97,7 @@ action.graph = function () {
             },
             legend: { position: 'top', textStyle: { color: 'black', fontSize: 16 }, },
             width: '100%',
+            chartArea: { width: 400},
             height: '50%',
             colors: ['black', '#282828'],
             vAxis: {
