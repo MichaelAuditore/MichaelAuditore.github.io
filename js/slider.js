@@ -58,7 +58,6 @@ action.skills = function () {
             { "name": "linux", "src": "images/linux.png" },
             { "name": "vim", "src": "images/vim.png" },
             { "name": "emacs", "src": "images/emacs.png" }
-            
         ];
 
     hskills.forEach(function (object) {
@@ -90,12 +89,13 @@ action.graph = function () {
         query.send(handleQueryResponse);
 
         var options = {
+            title: "Strong Abilities",
             animation: {
                 duration: 1100,
                 easing: "in",
                 startup: true
             },
-            legend: { position: 'top', textStyle: { color: 'black', fontSize: 16 } },
+            legend: { position: 'top', textStyle: { color: 'black', fontSize: 16 }, },
             width: '100%',
             height: '50%',
             colors: ['black', '#282828'],
