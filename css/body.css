@@ -395,7 +395,7 @@ input[type="submit"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
     width: 75%;
 }
 
-.c-text span {
+.c-text span, .c-text-align span{
     font-weight: bold;
 }
 
