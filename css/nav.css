@@ -86,8 +86,10 @@ li, span, form {
 }
 
 .container {
+    display: flex;
     width: 100%;
     padding-left: 0;
+    justify-content: center;
     margin: 0 auto;
 }
 

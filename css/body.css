@@ -118,9 +118,11 @@ section p {
     height: 15px;
     border-radius: 100%;
 }
+
 .slider-buttons {
     padding-bottom: 5%;
 }
+
 .active {
     background-image: url("../images/active.jpg");
     background-size: 100%;
@@ -132,11 +134,7 @@ section p {
 }
 
 .c-img {
-    width: 20%;
-}
-
-.bio {
-    width: 40%;
+    width: 100%;
 }
 
 .c-img img {
@@ -149,17 +147,18 @@ section p {
 
 .c-text {
     flex-direction: column;
-    width: 70%;
     margin-top: 0%;
 }
 
 .c-img, .c-text {
     display: inline-flex;
     padding-bottom: 1%;
-    padding-left: 4%;
+    justify-content: center;
 }
 
 .container.medium {
+    display: flex;
+    flex-flow: column;
     margin-top: 5%;
     width: 900px;
 }
@@ -380,5 +379,18 @@ input[type="submit"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
 }
 
 .c-text p {
-    margin: 5%;
+    padding: 5%;
+}
+
+.divide {
+    justify-content: center;
+    flex-flow: row-reverse wrap;
+}
+
+.divide .c-img, .divide .c-text {
+    width: 40%;
+}
+
+.c-text-align {
+    width: 75%;
 }
