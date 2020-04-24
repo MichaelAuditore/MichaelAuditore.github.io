@@ -4,7 +4,7 @@
         margin-bottom: 5%;
         height: 100px;
     }
-    .divide {
+    .divide, .resp {
         flex-flow: column wrap;
     }
     .divide .c-img, .divide .c-text {
@@ -222,6 +222,9 @@
     }
     .divide .c-img, .divide .c-text {
         width: 100%;
+    }
+    .resp {
+        flex-flow: column wrap;
     }
     .c-text p {
         margin: 0 auto;
