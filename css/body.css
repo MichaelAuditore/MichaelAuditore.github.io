@@ -148,6 +148,7 @@ section p {
 .c-text {
     flex-direction: column;
     margin-top: 0%;
+    color: black;
 }
 
 .c-img, .c-text {

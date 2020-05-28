@@ -2,7 +2,7 @@ var typed = new Typed('.typed', {
     strings: [
         "<i class='ani-text'>" +
         "I'm Miguel Angel<br>" +
-        "Full Stack Developer Junior<br>" +
+        "Full Stack Developer<br>" +
         "This website is my property<br>" +
         "Slide down to know About me</i>",
     ],
