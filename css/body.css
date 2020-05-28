@@ -379,10 +379,6 @@ input[type="submit"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
     width: 100%;
 }
 
-.c-text p {
-    padding-top: 5%;
-}
-
 .divide {
     justify-content: center;
     flex-flow: row-reverse wrap;
