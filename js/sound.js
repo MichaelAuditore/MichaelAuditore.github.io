@@ -53,11 +53,9 @@ SoundCloudAPI.getTrack = function (inputValue) {
 
 /* 3. Display the cards */
 SoundCloudAPI.renderTracks = function (tracks) {
-    var searchResults = document.querySelector(".js-search-results");
-    while (searchResults.firstChild) {
-        searchResults.removeChild(searchResults.firstChild);
-    }
+    console.log(document.querySelector(".js-search-results"));
     tracks.forEach(function (track) {
+        var searchResults = document.querySelector(".js-search-results");
         //card
         var card = document.createElement('div');
         card.classList.add("card");
