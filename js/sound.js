@@ -55,7 +55,7 @@ SoundCloudAPI.getTrack = function (inputValue) {
 SoundCloudAPI.renderTracks = function (tracks) {
     var searchResults = document.querySelector(".js-search-results");
     while (searchResults.firstChild) {
-        searchResults.removeChild(menu.firstChild);
+        searchResults.removeChild(searchResults.firstChild);
     }
     tracks.forEach(function (track) {
         //card
