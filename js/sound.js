@@ -5,8 +5,11 @@ var UI = {}
 UI.pressEnter = function (e) {
     var input = document.querySelector(".input-search");
     input.addEventListener("keyup", function (e) {
-        if (e.which == 13)
+        if (e.which == 13) {
+             var searchResults = document.querySelector(".js-search-results");
+            searchResults.innerHTML = "";
             SoundCloudAPI.getTrack(input.value);
+        }    
     });
 }
 
@@ -14,6 +17,8 @@ UI.submitClick = function () {
     var input = document.querySelector(".input-search").value;
     var button = document.querySelector(".js-submit");
     button.addEventListener("click", function () {
+        var searchResults = document.querySelector(".js-search-results");
+        searchResults.innerHTML = "";
         SoundCloudAPI.getTrack(input);
     });
 
@@ -46,7 +51,6 @@ SoundCloudAPI.getTrack = function (inputValue) {
     SC.get('/tracks', {
         genres: inputValue
     }).then(function (tracks) {
-        document.querySelector(".js-search-results").innerHTML = "";
         SoundCloudAPI.renderTracks(tracks);
     });
 
