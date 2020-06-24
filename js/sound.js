@@ -46,6 +46,7 @@ SoundCloudAPI.getTrack = function (inputValue) {
     SC.get('/tracks', {
         genres: inputValue
     }).then(function (tracks) {
+        document.querySelector(".js-search-results").innerHTML = "";
         SoundCloudAPI.renderTracks(tracks);
     });
 
@@ -53,7 +54,6 @@ SoundCloudAPI.getTrack = function (inputValue) {
 
 /* 3. Display the cards */
 SoundCloudAPI.renderTracks = function (tracks) {
-    document.querySelector(".js-search-results").innerHTML = "";
     tracks.forEach(function (track) {
         var searchResults = document.querySelector(".js-search-results");
         //card
