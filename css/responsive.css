@@ -1,4 +1,4 @@
-@media screen and (max-width:530px) {
+@media screen and (max-width:600px) {
     .align>img {
         width: 100px;
         margin-bottom: 5%;
@@ -131,7 +131,7 @@
     }
 }
 
-@media (min-width:530px) and (max-width:680px) {
+@media (min-width:600px) and (max-width:680px) {
     #nav {
         width: 0%!important;
     }
@@ -216,7 +216,7 @@
     }
 }
 
-@media (min-width:530px) and (max-width: 800px) {
+@media (min-width:600px) and (max-width: 800px) {
     #nav {
         width: 0%;
     }
@@ -293,7 +293,7 @@
     }
 }
 
-@media (max-width:530px) {
+@media (max-width:600px) {
     /*Navbar responsive*/
     #menu>img {
         height: 3.5em;
