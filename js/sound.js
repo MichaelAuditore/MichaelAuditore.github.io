@@ -6,7 +6,7 @@ UI.pressEnter = function (e) {
     var input = document.querySelector(".input-search");
     input.addEventListener("keyup", function (e) {
         if (e.which == 13) {
-             var searchResults = document.querySelector(".js-search-results");
+            var searchResults = document.querySelector(".js-search-results");
             searchResults.innerHTML = "";
             SoundCloudAPI.getTrack(input.value);
         }    
