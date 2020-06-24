@@ -16,9 +16,9 @@ UI.pressEnter = function (e) {
 UI.submitClick = function () {
     var input = document.querySelector(".input-search").value;
     var button = document.querySelector(".js-submit");
+    var searchResults = document.querySelector(".js-search-results");
+    searchResults.innerHTML = "";
     button.addEventListener("click", function () {
-        var searchResults = document.querySelector(".js-search-results");
-        searchResults.innerHTML = "";
         SoundCloudAPI.getTrack(input);
     });
 
