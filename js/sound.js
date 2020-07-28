@@ -5,15 +5,20 @@ var UI = {}
 UI.pressEnter = function (e) {
     var input = document.querySelector(".input-search");
     input.addEventListener("keyup", function (e) {
-        if (e.which == 13)
+        if (e.which == 13) {
+            var searchResults = document.querySelector(".js-search-results");
+            searchResults.innerHTML = "";
             SoundCloudAPI.getTrack(input.value);
+        }    
     });
 }
 
 UI.submitClick = function () {
-    var input = document.querySelector(".input-search").value;
     var button = document.querySelector(".js-submit");
     button.addEventListener("click", function () {
+        var input = document.querySelector(".input-search").value;
+        var searchResults = document.querySelector(".js-search-results");
+        searchResults.innerHTML = "";
         SoundCloudAPI.getTrack(input);
     });
 
@@ -34,7 +39,8 @@ SoundCloudAPI = {};
 
 SoundCloudAPI.init = function () {
     SC.initialize({
-        client_id: 'cd9be64eeb32d1741c17cb39e41d254d'
+        client_id: 'cd9be64eeb32d1741c17cb39e41d254d',
+        redirect_uri: 'http://api.soundcloud.com'
     });
 }
 
@@ -52,7 +58,6 @@ SoundCloudAPI.getTrack = function (inputValue) {
 
 /* 3. Display the cards */
 SoundCloudAPI.renderTracks = function (tracks) {
-
     tracks.forEach(function (track) {
         var searchResults = document.querySelector(".js-search-results");
         //card
@@ -65,7 +70,7 @@ SoundCloudAPI.renderTracks = function (tracks) {
 
         var image_img = document.createElement('img');
         image_img.classList.add("image_img");
-        image_img.src = track.artwork_url || "style/themes/default/assets/images/default.jpg";
+        image_img.src = track.artwork_url || "css/themes/default/assets/images/default.jpg";
 
 
         imageDiv.appendChild(image_img);
