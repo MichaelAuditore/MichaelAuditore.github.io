@@ -12,27 +12,16 @@ $(window).resize(function () {
 
 var action = {}
 
-var current = document.querySelectorAll(".slider-buttons ol li")[0];
-var next = document.querySelectorAll(".slider-buttons ol li")[1];
+var current = document.querySelector(".inactive");
+var next = document.querySelector(".active");
 
 action.show = function (element) {
     element.classList.remove("inactive");
     element.classList.add("active");
-    if (element === current) {
-        var list = document.querySelector(".hard .skills");
-        if (!list) {
-            action.skills();
-        }
-    }
-    else {
-        var list = document.querySelector(".hard .graph");
-        if (!list) {
-            action.graph();
-        }
-    }
 }
 
 action.hide = function (element) {
+    element.classList.remove("active");
     element.classList.add("inactive");
 }
 
@@ -97,7 +86,7 @@ action.graph = function () {
             },
             legend: { position: 'top', textStyle: { color: 'black', fontSize: 16 }, },
             width: '100%',
-            chartArea: { width: 400},
+            chartArea: { width: 400 },
             height: '50%',
             colors: ['black', '#282828'],
             vAxis: {
@@ -113,28 +102,32 @@ action.graph = function () {
 }
 
 action.removeskills = function () {
-    var align = document.querySelector(".skills");
+    let align = document.querySelector(".skills");
     if (align) {
         align.remove();
     }
 }
 
 action.removegraph = function () {
-    var align = document.querySelector(".graph");
+    let align = document.querySelector(".graph");
     if (align) {
         align.remove();
     }
 }
-action.show(current, next);
-action.hide(next, current);
 
-/* Invert functions */
+next.addEventListener("click", function () {
+    action.hide(next);
+    action.show(current);
+    action.removeskills();
+    action.graph();
+});
 
 current.addEventListener("click", function () {
-    action.show(current);
-    action.hide(next);
-});
-next.addEventListener("click", function () {
-    action.show(next);
     action.hide(current);
+    action.show(next);
+    action.removegraph();
+    action.skills();
 });
+
+action.skills();
+/* Invert functions */

@@ -103,34 +103,31 @@ section p {
     justify-content: center;
 }
 
-.slider-buttons ol {
-    display: flex;
-    justify-content: center;
-    flex-flow: row nowrap;
-}
-
-.slider-buttons ol li {
-    list-style: none;
-    margin-left: 1%;
-    cursor: pointer;
-    border: solid 1px black;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-}
-
 .slider-buttons {
-    padding-bottom: 5%;
+    width: 10%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.active {
-    background-image: url("../images/active.jpg");
-    background-size: 100%;
+.slider-buttons a {
+    text-decoration: none;
+    font-size: 5em;
+    cursor: pointer;
+    color: black;
+}
+
+.slider-buttons>a:hover {
+    color: #4c4949 !important;
 }
 
 .inactive {
-    background-image: url("../images/inactive.jpg");
-    background-size: 100%;
+    display: none;
+}
+
+.active {
+    display: block;
 }
 
 .c-img {
@@ -151,6 +148,9 @@ section p {
     color: black;
 }
 
+.hard {
+    width: 80%;
+}
 .c-img, .c-text {
     display: inline-flex;
     padding-bottom: 1%;
