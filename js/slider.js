@@ -1,15 +1,4 @@
 /* Get Button sliders  */
-$(window).resize(function () {
-    var li = document.querySelectorAll(".slider-buttons ol li")[1];
-    if (li.className === "active") {
-        var list = document.querySelector(".hard .graph");
-        if (list) {
-            action.removegraph();
-        }
-        action.graph();
-    }
-});
-
 var action = {}
 
 var current = document.querySelector(".inactive");
