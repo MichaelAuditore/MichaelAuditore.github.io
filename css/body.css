@@ -5,7 +5,7 @@ body {
 
 .c-text p,
 .box p {
-  text-align: initial;
+  text-align: justify;
 }
 
 .flex-page {
